@@ -109,7 +109,7 @@ class XPDBException(Exception):
 
 
 class XbrlSemanticGraphDatabaseConnection():
-    def __init__(self, modelXbrl, user, password, host, port, database, timeout, product):
+    def __init__(self, modelXbrl, user, password, host, port, database, timeout):
         self.modelXbrl = modelXbrl
         self.disclosureSystem = modelXbrl.modelManager.disclosureSystem
         #self.conn = RexProConnection(host, int(port or '8182'), (database or 'emptygraph'),
